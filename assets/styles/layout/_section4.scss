@@ -1,0 +1,152 @@
+#section4{
+    height: 100vh;
+    background-color: $fond;
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 1.8vh;
+
+    .title{
+        @include title;
+        padding: 2%;
+        font-size: 3vh;
+
+        h1{
+            color: $white;
+        }
+    }
+
+    img{
+        padding-bottom: 2%;
+    }
+    #bottomEvent{
+        display: flex;
+
+        #eventLeft{
+            width: 55%;
+
+            .cadreRight{
+                width: 70%;
+                background-color: $white;
+                text-align: left;
+
+                h2{
+                    font-weight: lighter;
+                    padding: 5%;
+                    letter-spacing: 3px;
+                }
+
+                div{
+                    display: flex;
+                    color: $grey;
+                    padding-left: 10px;
+
+                    i{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+
+                h3{
+                    padding: 5%;
+                    letter-spacing: 3px;
+                }
+            }
+
+            #event1{
+                display: flex;
+                margin: 20px;
+
+                #cadreLeft1{
+                    position: relative;
+                    background-image: url(../img/event-01.jpg);
+                    background-size: cover;
+                    width: 30%;
+                    height: 25vh;
+                }
+            }
+
+            #event2{
+                display: flex;
+                margin: 20px;
+
+                #cadreLeft2{
+                    position: relative;
+                    background-image: url(../img/event-02.jpg);
+                    background-size: cover;
+                    width: 30%;
+                    height: 25vh;
+                }
+            }
+
+            .cadre{
+                color: $white;
+                background-color: $fond;
+                width: 35%; 
+                height: 35%;
+                @include childCenter;
+                flex-direction: column;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    #eventRight{
+        position: relative;
+        width: 45%;
+        background-image: url(../img/event-03.jpg);
+        background-size: cover;
+        margin: 20px;
+
+        .cadre{
+            @include childCenter;
+            flex-direction: column;
+            color: $white;
+            background-color: $fond;
+            width: 20%; 
+            height: 20%;
+            flex-direction: column;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 1;
+        }
+
+        #reste{
+            @include childCenter;
+            flex-direction: column;
+            background-color: $white;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+
+            h2{
+                font-weight: lighter;
+                padding: 10%;
+                letter-spacing: 3px;
+            }
+
+            div{
+                display: flex;
+                color: $grey;
+                padding-left: 10px;
+
+                i{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            h3{
+                padding: 5%;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+#section3{
+    height: 100vh;
+    background-color: $fond;
+    @include childCenter;
+
+    #formulaire{
+        height: 80vh;
+        width: 80vw;
+        display: flex;
+
+        #infoLeft{
+            background-color: $black;
+            width: 35%;
+            color: $white;
+            text-align: center;
+            @include childCenter;
+            flex-direction: column;
+            
+            #borderInfo{
+                border: 1px dashed $white;
+                height: 90%;
+                width: 80%;
+                font-size: 2vh;
+            }
+
+            .title{
+                @include title;
+                padding: 2vh;
+
+                h2{
+                    font-size: 5vh;
+                }
+            }
+
+            img{
+                padding: 2vh;
+            }
+
+            div{
+                padding: 2vh;
+            }
+
+            h3{
+                padding: 2vh;
+                color: $yellow;
+            }
+
+            #borderInfo>h3{
+                padding-top: 5vh;
+            }
+        }
+
+        #reservation{
+            background-color: $white;
+            width: 65%;
+            @include childCenter;
+            flex-direction: column;
+            text-align: center;
+
+            .title{
+                @include title;
+                padding: 2vh;
+                height: 20%;
+
+                h2{
+                    font-size: 5.5vh;
+                }
+
+                h1{
+                    font-size: 4vh;
+                    margin-top: -1.8vh;
+                }
+            }
+
+            img{
+                padding: 2vh;
+            }
+
+            form{
+                display: grid;
+                grid-template-areas: 
+                "nbPersonne date heure"
+                "nom tel mail";
+                height: 30%;
+            }
+
+            input{
+                border:0;
+                border-bottom: 1px solid $grey;
+                background-color: $white;
+                margin: 25px;
+                font-size: 1.5vh;
+            }
+
+            input:first-child{
+                color: $black;
+            }
+
+            button{
+                font-family: $font2;
+                font-size: 2.5vh;
+                border-radius: 40px;
+                background-color: $fond;
+                color: $white;
+                padding: 1.5vh;
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+                border: 0;
+                margin-top: 5vh;
+                transition: 0.3s;
+            }
+
+            button:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

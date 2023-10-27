@@ -1,0 +1,62 @@
+#section5{
+    height: 100vh;
+
+    #fondHaut{
+        background-color: $fond;
+        height: 50vh;
+        position: relative;
+
+        #front{
+            position: absolute;
+            background-color: $white;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: auto;
+            text-align: center;
+            height: 50vh;
+            top: 40%;
+
+            img{
+                position: absolute;
+                @include circlePics;
+                height: 9vh;
+                top: -10%;
+                transform: translatex(-50%);
+            }
+
+            div{
+                padding-top: 10%;
+                padding-bottom: 3%;
+                padding-left: 8%;
+                padding-right: 8%;
+                font-size: 2vh;
+                letter-spacing: 1px;
+                line-height: 4vh;
+                
+                i{
+                    padding: 5px;
+                }
+            }
+
+            h1{
+                font-weight: lighter;
+                font-size: 3vh;
+            }
+
+            h2{
+                color: $yellow;
+                font-weight: lighter;
+                padding-top: 2%;
+                font-size: 2vh;
+            }
+        }
+    }
+
+    #back{
+        height: 50vh;
+        width: 100%;
+        background-image: url(../img/gmap.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}

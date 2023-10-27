@@ -1,0 +1,69 @@
+header{
+    height: 100vh;
+    background-image: url(../img/bg-slider-06.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    text-align: center;
+
+    nav{
+        color: $white;
+        @include childCenter;
+        
+        ul{
+            @include childCenter;
+
+            li{
+                padding: 2.5vw;
+                font-family: $font2;
+                color: $grey;
+            }
+
+            li:first-child{
+                font-family: $font1;
+                font-size: 5vh;
+                font-weight: bold;
+                margin-right: 3vw;
+                color: $white;
+            }
+
+            li:hover{
+                color: $white;
+                text-decoration: underline;
+                text-underline-offset: 8px;
+            }  
+        }
+
+        div {
+            margin-left: 3vw;
+            i{
+                padding: 0.5vw;
+            }
+        }
+    }
+    
+    .title{
+        @include title;
+
+        h2{
+            font-size: 3.5em;
+            margin-top: 14vh;
+        }
+    
+        h1{
+            letter-spacing: 0.5vw;
+            font-size: 4.5em;
+        }
+    }
+    
+
+    img{
+        padding: 50px;
+    }
+
+    p{
+        font-family: $font2;
+        font-weight: lighter;
+        letter-spacing: 0.5vw;
+    }
+}

@@ -1,0 +1,58 @@
+#section1{
+    display: flex;
+
+    #left{
+        width: 50%;
+        height: 60vh;
+        border: 2px dashed $yellow;
+        margin: 15px;
+        @include childCenter;
+        flex-direction: column;
+        text-align: center;
+
+        .title{
+            @include title;
+            font-size: 3vh;
+            padding: 2vh;
+
+            h2{
+                font-size: 5vh;
+            }
+        }
+
+        img{
+            padding: 2vh;
+        }
+
+        p{
+            padding: 2vh;
+        }
+
+        .circlePics{
+            padding-bottom: 2vh;
+
+            img{
+                @include circlePics;
+                height: 12vh;
+            }
+
+            h4{
+                font-size: 3vh;
+                font-weight: bold;
+            }
+
+            p{
+                margin-top: -2vh;
+                color: $grey;
+            }  
+        }
+    }
+
+    #right{
+        width: 50%;
+        height: 65vh;
+        background-image: url(../img/store-01.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
